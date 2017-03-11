@@ -88,7 +88,7 @@ $(document).on("click", ".food-choice", function() {
   var apiKey = "api_key=dc6zaTOxFJmzC";
   var limit = 10;
   var rating = "pg-13";
-  var queryURL = "http://api.giphy.com/v1/gifs/search?" + "q=" + queryString +
+  var queryURL = "https://api.giphy.com/v1/gifs/search?" + "q=" + queryString +
     "&" + apiKey + "&limit=" + limit + "&rating=" + rating;
   var options = {
     url: queryURL,
