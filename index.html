@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ajax tester!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	
+	<!-- Title for the page -->
+	<div class="page-header" id="game-title">
+	  <h1 class="text-center">THE FOOD GIF GENERATOR</h1>
+	</div>
+	<!-- END -->
+
+	<!-- Where buttons to display food GIFs located -->
+	<div class="row">
+	  <div class = "col-xs-12">
+		<div id="foodButtons"></div>
+	  </div>
+	</div>
+	<!-- END -->
+
+	<!-- Where the food GIFs appear -->
+	<div class="row">
+	  <div class="col-xs-9">
+		<div id="foodGIFs"></div>
+	  </div>
+
+	  <div class="col-xs-3">
+	    <h6 id="food-input-header">Add a food!</h6>
+	    <div class="input-group">
+          <input type="text" class="form-control" id="food-input" placeholder="ex: potatoes">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="add-food">Add!</button>
+          </span>
+        </div>
+        <div id="error-add"></div>
+        <h6 id="food-remove-header">...Or, remove a food by typing the button name!</h6>
+	    <div class="input-group" id="remove-input-group">
+          <input type="text" class="form-control" id="food-remove" placeholder="ex: mac n cheese">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="remove-food">Remove!</button>
+          </span>
+        </div>
+        <div id="error-remove"></div>
+	  </div>
+	</div>
+	<!-- END -->
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="assets/javascript/logic.js"></script>
+
+</body>
+</html>
